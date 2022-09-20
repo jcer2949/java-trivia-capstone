@@ -2,6 +2,7 @@ package com.kenzie.app;
 // import necessary libraries
 import DTOitems.Clues;
 import DTOitems.CluesDTO;
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class Main  {
 static Random rollingNumber= new Random();
 
 
-        public static void main (String[]args) throws IOException {
+        public static void main (String[]args) throws JsonParseException {
             //Write main execution code here
             //getting from the api with test print here
             try {
